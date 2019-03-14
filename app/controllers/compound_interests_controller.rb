@@ -8,7 +8,7 @@ class CompoundInterestsController < ApplicationController
   private
 
   def compound_interest_params
-    params.fetch(:compound_interest, {}).permit(:current_principal, :years_to_grow, :interest_rate)
+    params.fetch(:compound_interest, {}).permit(:current_principal, :years_to_grow, :interest_rate, :annual_addition)
   end
 
 end
